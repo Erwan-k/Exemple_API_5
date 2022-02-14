@@ -5,5 +5,4 @@ from flask import send_file
 class exemple_route(Resource):
 	def get(self):
 
-		path = "./datascientest.jpg"
-		return send_file(path, as_attachment=True, mimetype='image/gif')
+		return send_file("./datascientest.jpg", as_attachment=True, mimetype='image/gif')
